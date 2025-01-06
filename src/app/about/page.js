@@ -7,7 +7,7 @@ const AboutPage = () => {
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 pt-6">
         {/* Profile Image */}
         <div className="rounded-2xl overflow-hidden w-[300px] h-[250px] sm:w-[350px] sm:h-[300px] lg:w-[500px] lg:h-[px]">
-          <img
+          <Image
             src="/img/pond.png"
             alt="Profile Picture"
             width={500}
