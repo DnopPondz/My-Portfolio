@@ -18,7 +18,7 @@ const Project = () => {
       {/* Frontend */}
       <div className="flex flex-col  items-center gap-6">
         <h1 className="w-[100px] h-[40px] rounded-lg flex justify-center items-center bg-blue-600 text-white">
-          <i className="bx bx-desktop pr-1 " undefined></i>FrontEnd
+          <i className="bx bx-desktop pr-1 "></i>FrontEnd
         </h1>
 
         {/* card */}
@@ -27,7 +27,7 @@ const Project = () => {
             <div className=" flex flex-col items-center">
               <div className="w-[250px] h-[150px] mt-2 pt-3 rounded-md transition-transform duration-300 hover:scale-105 hover:translate-y-[-5px]">
                 <Image 
-                  src="/img/Myprofile.png"
+                  src="/Myprofile.png"
                   alt="Profile Picture"
                   width={500}
                   height={500}
