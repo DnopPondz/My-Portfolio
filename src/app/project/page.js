@@ -48,9 +48,9 @@ const Project = () => {
                 <p className="p-1 border-2 rounded-lg bg-blue-900">NextJS</p>
               </div>
               <div className="flex flex-row gap-1 mt-1 ">
-                <button className="bg-blue-800 w-[125px] h-[45px] border-2 rounded-xl transition-transform duration-300 hover:scale-105 hover:translate-y-[-5px]">
+                <a href="https://github.com/DnopPondz/My-Portfolio" target="_blank"><button className="bg-blue-800 w-[125px] h-[45px] border-2 rounded-xl transition-transform duration-300 hover:scale-105 hover:translate-y-[-5px]">
                   <i className="bx bxl-github text-2xl text-white"></i>
-                </button>
+                </button></a>
                 <button className="bg-blue-800 w-[125px] h-[45px] border-2 rounded-xl transition-transform duration-300 hover:scale-105 hover:translate-y-[-5px]">
                   <i className="bx bx-show-alt text-2xl text-white"></i>
                 </button>
