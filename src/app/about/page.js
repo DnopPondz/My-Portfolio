@@ -8,7 +8,7 @@ const AboutPage = () => {
         {/* Profile Image */}
         <div className="rounded-2xl overflow-hidden w-[300px] h-[250px] sm:w-[350px] sm:h-[300px] lg:w-[500px] lg:h-[px]">
           <Image
-            src="/assets/img/pond.png"
+            src="/img/pond.png"
             alt="Profile Picture"
             width={500}
             height={400}
@@ -31,7 +31,7 @@ const AboutPage = () => {
       {/* Resume Download Button */}
       <a
         className="w-[300px] sm:w-[400px] h-[60px] sm:h-[70px] rounded-full flex justify-center items-center gap-2 bg-blue-700 text-white text-center transition-transform duration-300 hover:scale-105"
-        href="public/assets/resume/Wachirodol Resume.pdf"
+        href="/resume/Wachirodol Resume.pdf"
         download="Wachirodol_Thongnate_Resume.pdf"
         target="_blank"
       >
