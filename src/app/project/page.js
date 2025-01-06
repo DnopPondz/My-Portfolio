@@ -26,7 +26,7 @@ const Project = () => {
           <div className="w-[270px] h-[360px] bg-blue-950 rounded-lg shadow-2xl shadow-blue-900">
             <div className=" flex flex-col items-center">
               <div className="w-[250px] h-[150px] mt-2 pt-3 rounded-md transition-transform duration-300 hover:scale-105 hover:translate-y-[-5px]">
-                <Image 
+                <img 
                   src="/img/Myprofile.png"
                   alt="Profile Picture"
                   width={500}
