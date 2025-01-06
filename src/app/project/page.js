@@ -29,8 +29,6 @@ const Project = () => {
                 <Image 
                   src="/My%20Profile.PNG"
                   alt="Profile Picture"
-                  width={500}
-                  height={500}
                   className="object-cover"
                 />
               </div>

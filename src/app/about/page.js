@@ -8,10 +8,8 @@ const AboutPage = () => {
         {/* Profile Image */}
         <div className="rounded-2xl overflow-hidden w-[300px] h-[250px] sm:w-[350px] sm:h-[300px] lg:w-[500px] lg:h-[px]">
           <Image
-            src="/Me%20Picture.PNG"
+            src="/My%20Picture.PNG"
             alt="Profile Picture"
-            width={500}
-            height={400}
             className="object-cover"
           />
         </div>
