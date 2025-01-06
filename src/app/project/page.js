@@ -27,7 +27,7 @@ const Project = () => {
             <div className=" flex flex-col items-center">
               <div className="w-[250px] h-[150px] mt-2 pt-3 rounded-md transition-transform duration-300 hover:scale-105 hover:translate-y-[-5px]">
                 <Image 
-                  src="/Myprofile.png"
+                  src="/My%20Profile.png"
                   alt="Profile Picture"
                   width={500}
                   height={500}
@@ -51,9 +51,9 @@ const Project = () => {
                 <a href="https://github.com/DnopPondz/My-Portfolio" target="_blank"><button className="bg-blue-800 w-[125px] h-[45px] border-2 rounded-xl transition-transform duration-300 hover:scale-105 hover:translate-y-[-5px]">
                   <i className="bx bxl-github text-2xl text-white"></i>
                 </button></a>
-                <a href="https://my-portfolio-pi-jet-94.vercel.app/" target="_blank"></a><button className="bg-blue-800 w-[125px] h-[45px] border-2 rounded-xl transition-transform duration-300 hover:scale-105 hover:translate-y-[-5px]">
+                <a href="https://my-portfolio-pi-jet-94.vercel.app/" target="_blank"><button className="bg-blue-800 w-[125px] h-[45px] border-2 rounded-xl transition-transform duration-300 hover:scale-105 hover:translate-y-[-5px]">
                   <i className="bx bx-show-alt text-2xl text-white"></i>
-                </button>
+                </button></a>
               </div>
             </div>
           </div>
