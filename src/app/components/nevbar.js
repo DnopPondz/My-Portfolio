@@ -1,87 +1,106 @@
 "use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
+import { useState } from "react";
+import Link from "next/link";
+
 
 const Navbar = () => {
-  const [isDropdownOpen, setDropdownOpen] = useState(false);
 
-  const toggleDropdown = () => {
-    setDropdownOpen(!isDropdownOpen);
+  const [isDarkMode, setIsDarkMode] = useState(false); // Manage dark mode state
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(prevState => !prevState); // Toggle between true/false
   };
 
+
   return (
-    <nav className="border-blue-200 bg-blue-50 dark:bg-blue-900 sticky top-0 z-50">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <span className="self-center text-3xl font-semibold whitespace-nowrap dark:text-white ">
-            MY PORTFOLIO
-          </span>
-        </Link>
-        <button
-          onClick={toggleDropdown}
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-blue-500 rounded-lg md:hidden hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-200 dark:text-blue-400 dark:hover:bg-blue-700 dark:focus:ring-blue-600"
-          aria-expanded={isDropdownOpen}
-        >
-          <span className="sr-only">Open main menu</span>
-          <svg
-            className="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
+    <div className="navbar bg-[#2a0945] sticky top-0 ">
+      <div className="navbar-start ">
+        <div className="dropdown text-white text-2xl">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden  ">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
               stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
-        </button>
-        <div
-          className={`${
-            isDropdownOpen ? 'block' : 'hidden'
-          } w-full md:block md:w-auto`}
-        >
-          <ul className="flex flex-col font-medium mt-4 rounded-lg bg-blue-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-blue-900 md:dark:bg-transparent dark:border-blue-900 text-xl">
-            <li>
-              <Link
-                href="/"
-                className="block py-2 px-3 md:p-0 text-blue-900 rounded hover:bg-blue-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-blue-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Home
-              </Link>
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-2 shadow bg-[#2a0945]   "
+          >
+            <li >
+              <Link href="/about">About Me</Link>
             </li>
             <li>
-              <Link
-                href="/about"
-                className="block py-2 px-3 md:p-0 text-blue-900 rounded hover:bg-blue-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-blue-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                About
-              </Link>
+              <p>Projects</p>
+              <ul >
+                <li>
+                  <Link href="/projectfrontend">FrontEnd</Link>
+                </li>
+                <li>
+                  <Link href="/projectbackend">Backend</Link>
+                </li>
+                <li>
+                  <Link href="/projectfullstack">FullStack</Link>
+                </li>
+              </ul>
             </li>
             <li>
-              <Link
-                href="/project"
-                className="block py-2 px-3 md:p-0 text-blue-900 rounded hover:bg-blue-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-blue-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Project
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/contact"
-                className="block py-2 px-3 md:p-0 text-blue-900 rounded hover:bg-blue-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-blue-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Contact
-              </Link>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </div>
+        <Link href="/" className="btn btn-ghost text-3xl text-white">Wachirodol <span className="text-[#fcda68]">Portfolio</span></Link>
       </div>
-    </nav>
+      <div className="navbar-center hidden lg:flex text-white " >
+        <ul className="menu menu-horizontal px-1 text-xl ">
+          <li>
+            <Link href="/about">About</Link>
+          </li>
+          <li>
+            <details>
+              <summary>Projects</summary>
+              <ul className="p-2 bg-[#2a0945]">
+                <li>
+                  <Link href="/projectfrontend">FrontEnd</Link>
+                </li>
+                <li>
+                  <Link href="/projectbackend">Backend</Link>
+                </li>
+                <li>
+                  <Link href="/projectfullstack">FullStack</Link>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+          <Link href="/contact">Contact</Link>
+          </li>
+        </ul>
+      </div>
+      <div className="navbar-end">
+      <a
+        onClick={toggleDarkMode}
+        className="btn btn-ghost w-[50px] h-[50px] bg-[#2a0945] rounded-full text-[#fcda68] transition-all duration-500"
+      >
+        <i
+          className={`bx transition-transform duration-500 ${isDarkMode ? 'bxs-sun opacity-100' : 'bxs-moon opacity-100'}`}
+          style={{
+            transform: isDarkMode ? 'rotate(360deg)' : 'rotate(0deg)',
+          }}
+        ></i>
+      </a>
+    </div>
+    </div>
   );
 };
 

@@ -1,21 +1,23 @@
 @import 'boxicons/css/boxicons.min.css';
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
-
-
+/* globals.css */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-color: #ffffff; /* สีพื้นหลังสำหรับ light mode */
+  --text-color: #000000; /* สีข้อความสำหรับ light mode */
 }
 
+.dark {
+  --bg-color: #2a0945; /* สีพื้นหลังสำหรับ dark mode */
+  --text-color: #ffffff; /* สีข้อความสำหรับ dark mode */
+}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+html {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }

@@ -1,41 +1,25 @@
-"use client";
-
-import { useEffect } from 'react';
-
 const Contact = () => {
- 
-  useEffect(() => {
-    document.body.style.overflow = 'hidden'; // Disable scrolling
-    return () => {
-      document.body.style.overflow = 'auto'; // Enable scrolling when the component is unmounted
-    };
-  }, []);
-
   return (
-    <div className="flex flex-col justify-center items-center w-full h-screen">
-      <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20 w-full md:w-auto">
-        <h1 className="text-5xl font-medium text-[#42A5F5]">Contact Me <i className='bx bxs-face'></i></h1>
-        <div className="flex flex-col items-center justify-center gap-6 md:border-l-2 md:border-black pl-10 md:pl-20">
-          <div className="text-center">
-            <h1 className="font-semibold text-2xl mb-2 text-[#42A5F5]">Address</h1>
-            <p className='text-xl text-gray-400'>71/1 Sebungwan Village, Moo 4, Soi 8, Mueang District, <br className="hidden md:block"/>Lamphun 51000, Thailand</p>
+    <div className="h-[800px] flex flex-col items-center justify-center bg-[#43275b] ">
+      <div className="flex flex-col items-center gap-40 ">
+        <h1 className="text-7xl">
+          Contact <span className="text-[#fcda68] ">Me<i className='bx bxs-hand-left bx-fade-right text-[#fcda68]' ></i></span>
+          
+        </h1>
+        <div className="flex flex-row justify-around gap-64">
+          <div className="flex flex-col items-center gap-4">
+            <i className="bx bxl-gmail text-7xl text-[#fcda68] transition-transform duration-300  hover:animate-shake"></i>
+            <h1 className="text-xl text-white">pondwachi.th@gmail.com</h1>
           </div>
-          <div className="text-center">
-            <h1 className="font-semibold text-2xl mb-2 text-[#42A5F5]">Phone Number</h1>
-            <p className='text-xl text-gray-400'>061-2674-523</p>
+          <div className="flex flex-col items-center gap-4">
+            <i className="bx bxs-phone text-7xl text-[#fcda68] transition-transform duration-300  hover:animate-shake"></i>
+            <h1 className="text-xl text-white">+66 061-2674-523</h1>
           </div>
-          <div className="text-center">
-            <h1 className="font-semibold text-2xl mb-2 text-[#42A5F5]">Email</h1>
-            <p className='text-xl text-gray-400'>Pondwachi.th@gmail.com</p>
+          <div className="flex flex-col items-center gap-4">
+            <i className="bx bxs-map text-7xl text-[#fcda68] transition-transform duration-300  hover:animate-shake"></i>
+            <h1 className="text-xl text-white">Lamphun-Thailand</h1>
           </div>
         </div>
-      </div>
-
-      <div className="flex justify-center items-center gap-20 mt-20">
-
-        <a className='w-[80px] h-[50px] text-6xl text-[#0866ff]' href='https://www.facebook.com/pond.wachirodol' target='_blank'><i className='bx bxl-facebook-circle bx-flashing' ></i></a>
-        <a className='w-[80px] h-[50px] text-6xl text-[#0866ff]' href='https://www.linkedin.com/in/wachirodol-thongnate-6b6b24313/' target='_blank'><i className='bx bxl-linkedin bx-flashing' ></i></a>
-        <a className='w-[80px] h-[50px] text-6xl text-[#0866ff]' href='https://github.com/DnopPondz' target='_blank'><i className='bx bxl-github bx-flashing' ></i></a>
       </div>
     </div>
   );

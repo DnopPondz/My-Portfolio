@@ -2,124 +2,189 @@ import Image from "next/image";
 
 const AboutPage = () => {
   return (
-    <div className="w-full max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col items-center justify-center gap-10 mt-10 lg:mt-[90px] lg:mb-[90px]">
-      {/* Profile Section */}
-      <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 pt-6">
-        {/* Profile Image */}
-        <div className="rounded-2xl overflow-hidden w-[300px] h-[250px] sm:w-[350px] sm:h-[300px] lg:w-[500px] lg:h-[px]">
-          <Image
-            src="/My%20Picture.PNG"
-            alt="Profile Picture"
-            className="object-cover"
-          />
-        </div>
-        {/* Text Content */}
-        <div className="w-full max-w-[575px] flex flex-col gap-6 text-center lg:text-left">
-          <h1 className="text-xl sm:text-2xl text-[#42A5F5] font-semibold">
-            -Introduction-
-          </h1>
-          <h1 className="text-3xl sm:text-4xl font-medium ">Web Developer</h1>
-          <p className="text-base sm:text-lg lg:text-xl text-[#42A5F5]">
-            I am a web developer looking for a junior role in a software
-            development agency. I am familiar with React and JavaScript.
-            However, I am open to working on any tech stack and am eager to
-            learn and contribute to high-quality software.
-          </p>
-        </div>
+    <div className="w-full h-[800px] flex flex-row bg-[#43275b] gap-4 pt-10">
+      <div className="w-full  flex flex-col gap-12 ml-20 ">
+        <h1 className="text-5xl text-white ">
+          About <span className="text-[#fcda68]">Me</span>
+        </h1>
+        <p className="text-white text-3xl leading-normal max-w-full ">
+          I am a passionate web developer seeking a junior role in a software
+          development agency where
+          <span className="text-[#fcda68]">
+            {" "}
+            I can grow my skills and contribute to impactful projects.
+          </span>
+          I have experience working with{" "}
+          <span className="text-[#fcda68]">React, JavaScript,</span> and modern
+          front-end development tools. While my primary expertise lies in web
+          development, I am open to exploring and adapting to any tech stack as
+          required. I am eager to collaborate with a talented team, continually
+          learn, and contribute to delivering high-quality software solutions
+          that meet user needs and business goals.
+        </p>
       </div>
 
-      {/* Resume Download Button */}
-      <a
-        className="w-[300px] sm:w-[400px] h-[60px] sm:h-[70px] rounded-full flex justify-center items-center gap-2 bg-blue-700 text-white text-center transition-transform duration-300 hover:scale-105"
-        href="/resume/Wachirodol%20Resume.pdf"
-        download="Wachirodol_Thongnate_Resume.pdf"
-        target="_blank"
-      >
-        <i className="bx bxs-cloud-download bx-tada text-3xl sm:text-4xl"></i>
-        <button className="text-lg sm:text-2xl">Download My Resume!</button>
-      </a>
-
-      {/* Skills Section */}
-      <div className="flex flex-col justify-center items-center gap-10 w-full">
-        <h1 className="text-xl sm:text-2xl text-[#42A5F5] font-semibold">
-          -My Skills-
+      <div className="w-full  flex flex-col items-center gap-16 mt-4">
+        <h1 className="text-5xl text-white">
+          My <span className="text-[#fcda68]">Specialities</span>
         </h1>
-        <div className="w-full max-w-[1100px] mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 sm:gap-8 lg:gap-10 justify-items-center">
-          {[
-            {
-              name: "HTML",
-              src: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
-            },
-            {
-              name: "CSS",
-              src: "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
-            },
-            {
-              name: "TailwindCSS",
-              src: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
-            },
-            {
-              name: "JavaScript",
-              src: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
-            },
-            {
-              name: "NodeJS",
-              src: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
-            },
-            {
-              name: "Express",
-              src: "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
-            },
-            {
-              name: "React",
-              src: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
-            },
-            {
-              name: "NextJS",
-              src: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
-            },
-            { name: "Vite", src: "https://vitejs.dev/logo.svg" },
-            {
-              name: "Vue",
-              src: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg",
-            },
-            {
-              name: "Angular",
-              src: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg",
-            },
-            {
-              name: "DaisyUI",
-              src: "https://raw.githubusercontent.com/saadeghi/files/main/daisyui/logo.svg",
-            },
-            {
-              name: "PostgreSQL",
-              src: "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg",
-            },
-            {
-              name: "MongoDB",
-              src: "https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg",
-            },
-            {
-              name: "Git/GitHub",
-              src: "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
-            },
-            {
-              name: "Figma",
-              src: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
-            },
-          ].map((skill) => (
-            <div
-              key={skill.name}
-              className="flex flex-col items-center justify-center gap-2 w-full max-w-[100px]"
-            >
-              <p className="text-sm sm:text-base font-semibold">{skill.name}</p>
-              <img
-                className="w-[50px] sm:w-[80px] md:w-[100px] h-[50px] sm:h-[80px] md:h-[100px]"
-                src={skill.src}
-                alt={`${skill.name} Logo`}
+        <div className="flex flex-col items-center justify-center gap-10">
+          {/* row 1 */}
+          <div className="flex flex-wrap gap-12">
+            <div className="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-white border-2 border-[#fcda68] ">
+              <Image
+                className="w-[50px] h-[50px] "
+                src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                width={500}
+                height={500}
+                alt="HTML"
               />
             </div>
-          ))}
+            <div className="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-white border-2 border-[#fcda68] ">
+              <Image
+                className="w-[50px] h-[50px]"
+               src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                width={500}
+                height={500}
+                alt="CSS"
+              />
+            </div>
+            <div className="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-white border-2 border-[#fcda68] ">
+              <Image
+                className="w-[50px] h-[50px]"
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+                width={500}
+                height={500}
+                alt="TailwindCSS"
+              />
+            </div>
+            <div className="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-white border-2 border-[#fcda68] ">
+              <Image
+                className="w-[50px] h-[50px]"
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                width={500}
+                height={500}
+                alt="JaVAScript"
+              />
+            </div>
+          </div>
+          {/* row 2 */}
+          <div className="flex gap-12">
+            <div className="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-white border-2 border-[#fcda68] ">
+              <Image
+                className="w-[50px] h-[50px]"
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                width={500}
+                height={500}
+                alt="NodeJS"
+              />
+            </div>
+            <div className="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-white border-2 border-[#fcda68] ">
+              <Image
+                className="w-[50px] h-[50px]"
+                src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png"
+                width={500}
+                height={500}
+                alt="Express"
+              />
+            </div>
+            <div className="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-white border-2 border-[#fcda68] ">
+              <Image
+                className="w-[50px] h-[50px]"
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                width={500}
+                height={500}
+                alt="React"
+              />
+            </div>
+            <div className="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-white border-2 border-[#fcda68] ">
+              <Image
+                className="w-[50px] h-[50px]"
+                src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
+                width={500}
+                height={500}
+                alt="NextJS"
+              />
+            </div>
+          </div>
+          {/* row 3 */}
+          <div className="flex gap-12">
+            <div className="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-white border-2 border-[#fcda68] ">
+              <Image
+                className="w-[50px] h-[50px]"
+                src="https://vitejs.dev/logo.svg"
+                width={500}
+                height={500}
+                alt="ViteJS"
+              />
+            </div>
+            <div className="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-white border-2 border-[#fcda68] ">
+              <Image
+                className="w-[50px] h-[50px]"
+                src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg"
+                width={500}
+                height={500}
+                alt="VueJS"
+              />
+            </div>
+            <div className="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-white border-2 border-[#fcda68] ">
+              <Image
+                className="w-[50px] h-[50px]"
+                src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg"
+                width={500}
+                height={500}
+                alt="Angular"
+              />
+            </div>
+            <div className="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-white border-2 border-[#fcda68] ">
+              <Image
+                className="w-[50px] h-[50px]"
+                src="https://raw.githubusercontent.com/saadeghi/files/main/daisyui/logo.svg" 
+                width={500}
+                height={500}
+                alt="DaisyUI"
+              />
+            </div>
+          </div>
+          {/* row 4 */}
+          <div className="flex gap-12">
+            <div className="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-white border-2 border-[#fcda68] ">
+              <Image
+                className="w-[50px] h-[50px]"
+                src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg"
+                width={500}
+                height={500}
+                alt="PostgreSQL"
+              />
+            </div>
+            <div className="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-white border-2 border-[#fcda68] ">
+              <Image
+                className="w-[50px] h-[50px]"
+                src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg"
+                width={500}
+                height={500}
+                alt="MongoDB"
+              />
+            </div>
+            <div className="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-white border-2 border-[#fcda68] ">
+              <Image
+                className="w-[50px] h-[50px]"
+                src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" 
+                width={500}
+                height={500}
+                alt="GitHub"
+              />
+            </div>
+            <div className="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-white border-2 border-[#fcda68] ">
+              <Image
+                className="w-[50px] h-[50px]"
+                src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" 
+                width={500}
+                height={500}
+                alt="Figma"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

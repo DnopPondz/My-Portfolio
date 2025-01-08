@@ -1,6 +1,12 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/nevbar";
+import { Nunito } from "next/font/google";
+import Footer from "./components/footer";
+
+
+
+const inter = Nunito({ weight: "400", subsets: ["latin"] });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,10 +27,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased ${inter.className}`}
       >
+       
         <Navbar />
         {children}
+        <Footer />
+        
+        
       </body>
     </html>
   );
