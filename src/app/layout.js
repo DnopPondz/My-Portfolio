@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
          {/* Floating Icons */}
-      <div className="fixed bottom-16 right-10 flex flex-col gap-4 z-50">
+      <div className="fixed bottom-16 right-5 flex flex-col gap-4 z-50">
         <a
           href="https://github.com/DnopPondz"
           target="_blank"

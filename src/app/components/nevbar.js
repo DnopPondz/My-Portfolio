@@ -62,7 +62,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end hidden">
         <a
           onClick={toggleDarkMode}
           className="btn btn-ghost w-[50px] h-[50px] bg-[#2a0945] rounded-full text-[#fcda68] transition-all duration-500"
