@@ -5,19 +5,3 @@
 @tailwind utilities;
 
 
-/* globals.css */
-:root {
-  --bg-color: #ffffff; /* สีพื้นหลังสำหรับ light mode */
-  --text-color: #000000; /* สีข้อความสำหรับ light mode */
-}
-
-.dark {
-  --bg-color: #2a0945; /* สีพื้นหลังสำหรับ dark mode */
-  --text-color: #ffffff; /* สีข้อความสำหรับ dark mode */
-}
-
-html {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}

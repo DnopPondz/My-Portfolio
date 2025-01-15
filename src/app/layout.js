@@ -3,6 +3,9 @@ import "./globals.css";
 import Navbar from "./components/nevbar";
 import { Nunito } from "next/font/google";
 import Footer from "./components/footer";
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css'; // Import CSS
+config.autoAddCss = false; 
 
 
 
@@ -32,6 +35,23 @@ export default function RootLayout({ children }) {
        
         <Navbar />
         {children}
+         {/* Floating Icons */}
+      <div className="fixed bottom-16 right-10 flex flex-col gap-4 z-50">
+        <a
+          href="https://github.com/DnopPondz"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="bx bxl-github text-4xl transition-transform duration-500 ease-in-out hover:scale-110 text-[#fcda68]"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/wachirodol-thongnate-6b6b24313/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="bx bxl-linkedin text-4xl transition-transform duration-500 ease-in-out hover:scale-110 text-[#fcda68]"></i>
+        </a>
+      </div>
         <Footer />
         
         
