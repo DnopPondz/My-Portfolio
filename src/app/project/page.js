@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-const ProjectFrontend = () => {
+const Project = () => {
   return (
-    <div className="w-full h-[800px] flex flex-col items-center justify-start  bg-[#2a0945]">
+    <div className="w-full min-h-[800px] h-auto flex flex-col items-center justify-start  bg-[#2a0945]">
       <div className="mt-7">
-        <h1 className="text-6xl text-white">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl text-white">
           My <span className="text-[#fcda68]">Collection</span>
         </h1>
       </div>
@@ -45,19 +45,23 @@ const ProjectFrontend = () => {
               <h1 className="text-white mt-2 self-start ml-5">My Profilio</h1>
 
               <div className="flex flex-wrap gap-3 text-white mx-4 mt-4 mb-2">
-                {["HTML", "CSS", "Tailwind CSS", "JavaScript", "NextJS", "DaisyUI"].map(
-                  (tech) => (
-                    <p
-                      key={tech}
-                      className="p-1 border-2 rounded-lg bg-blue-900"
-                    >
-                      {tech}
-                    </p>
-                  )
-                )}
+                {[
+                  "HTML",
+                  "CSS",
+                  "Tailwind CSS",
+                  "JavaScript",
+                  "NextJS",
+                  "DaisyUI",
+                ].map((tech) => (
+                  <p key={tech} className="p-1 border-2 rounded-lg bg-blue-900">
+                    {tech}
+                  </p>
+                ))}
               </div>
             </div>
-            <p className="text-start py-2 pl-4 text-white">Work status: <span className=" ml-2  text-[#fcda68]" >Done</span></p>
+            <p className="text-start py-2 pl-4 text-white">
+              Work status: <span className=" ml-2  text-[#fcda68]">Done</span>
+            </p>
           </div>
 
           {/* 2 */}
@@ -92,22 +96,21 @@ const ProjectFrontend = () => {
                 </div>
               </div>
 
-              <h1 className="text-white mt-2 self-start ml-5">Education web layout</h1>
+              <h1 className="text-white mt-2 self-start ml-5">
+                Education web layout
+              </h1>
 
               <div className="flex flex-wrap gap-3 text-white mx-4 mt-4 mb-2">
-                {["HTML", "CSS", ].map(
-                  (tech) => (
-                    <p
-                      key={tech}
-                      className="p-1 border-2 rounded-lg bg-blue-900"
-                    >
-                      {tech}
-                    </p>
-                  )
-                )}
+                {["HTML", "CSS"].map((tech) => (
+                  <p key={tech} className="p-1 border-2 rounded-lg bg-blue-900">
+                    {tech}
+                  </p>
+                ))}
               </div>
             </div>
-            <p className="text-start py-2 pl-4 mt-12 text-white">Work status: <span className=" ml-2  text-[#fcda68]" >Done</span></p>
+            <p className="text-start py-2 pl-4 mt-12 text-white">
+              Work status: <span className=" ml-2  text-[#fcda68]">Done</span>
+            </p>
           </div>
 
           {/* 3 */}
@@ -145,21 +148,18 @@ const ProjectFrontend = () => {
               <h1 className="text-white mt-2 self-start ml-5">Login layout</h1>
 
               <div className="flex flex-wrap gap-3 text-white mx-4 mt-4 mb-2">
-                {["HTML", "CSS", "JavaScript", ].map(
-                  (tech) => (
-                    <p
-                      key={tech}
-                      className="p-1 border-2 rounded-lg bg-blue-900"
-                    >
-                      {tech}
-                    </p>
-                  )
-                )}
+                {["HTML", "CSS", "JavaScript"].map((tech) => (
+                  <p key={tech} className="p-1 border-2 rounded-lg bg-blue-900">
+                    {tech}
+                  </p>
+                ))}
               </div>
             </div>
-            <p className="text-start py-2 pl-4 mt-12 text-white">Work status: <span className=" ml-2  text-[#fcda68]" >Done</span></p>
+            <p className="text-start py-2 pl-4 mt-12 text-white">
+              Work status: <span className=" ml-2  text-[#fcda68]">Done</span>
+            </p>
           </div>
-          
+
           {/* 4 */}
           <div className="w-[290px] h-[320px] bg-blue-950 rounded-lg shadow-2xl shadow-blue-900">
             <div className="flex flex-col items-center">
@@ -192,22 +192,28 @@ const ProjectFrontend = () => {
                 </div>
               </div>
 
-              <h1 className="text-white mt-2 self-start ml-5">Login with API Swagger</h1>
+              <h1 className="text-white mt-2 self-start ml-5">
+                Login with API Swagger
+              </h1>
 
               <div className="flex flex-wrap gap-3 text-white mx-4 mt-4 mb-2">
-                {["HTML", "CSS", "Tailwind CSS", "JavaScript", "Angular", "Swagger"].map(
-                  (tech) => (
-                    <p
-                      key={tech}
-                      className="p-1 border-2 rounded-lg bg-blue-900"
-                    >
-                      {tech}
-                    </p>
-                  )
-                )}
+                {[
+                  "HTML",
+                  "CSS",
+                  "Tailwind CSS",
+                  "JavaScript",
+                  "Angular",
+                  "Swagger",
+                ].map((tech) => (
+                  <p key={tech} className="p-1 border-2 rounded-lg bg-blue-900">
+                    {tech}
+                  </p>
+                ))}
               </div>
             </div>
-            <p className="text-start py-2 pl-4 text-white">Work status: <span className=" ml-2  text-[#fcda68]" >Done</span></p>
+            <p className="text-start py-2 pl-4 text-white">
+              Work status: <span className=" ml-2  text-[#fcda68]">Done</span>
+            </p>
           </div>
 
           {/* 5 */}
@@ -245,19 +251,24 @@ const ProjectFrontend = () => {
               <h1 className="text-white mt-2 self-start ml-5">BookNest</h1>
 
               <div className="flex flex-wrap gap-3 text-white mx-4 mt-4 mb-2">
-                {["HTML", "CSS", "Tailwind CSS", "JavaScript", "NextJS", "DaisyUI"].map(
-                  (tech) => (
-                    <p
-                      key={tech}
-                      className="p-1 border-2 rounded-lg bg-blue-900"
-                    >
-                      {tech}
-                    </p>
-                  )
-                )}
+                {[
+                  "HTML",
+                  "CSS",
+                  "Tailwind CSS",
+                  "JavaScript",
+                  "NextJS",
+                  "DaisyUI",
+                ].map((tech) => (
+                  <p key={tech} className="p-1 border-2 rounded-lg bg-blue-900">
+                    {tech}
+                  </p>
+                ))}
               </div>
             </div>
-            <p className="text-start py-2 pl-4 text-white">Work status: <span className=" ml-2  text-[#fcda68]" >Working</span></p>
+            <p className="text-start py-2 pl-4 text-white">
+              Work status:{" "}
+              <span className=" ml-2  text-[#fcda68]">Working</span>
+            </p>
           </div>
         </div>
       </div>
@@ -265,4 +276,4 @@ const ProjectFrontend = () => {
   );
 };
 
-export default ProjectFrontend;
+export default Project;
