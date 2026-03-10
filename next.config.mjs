@@ -6,6 +6,12 @@ const nextConfig = {
       'www.supportpal.com',
       'www.whmcs.com',
     ],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "image.thum.io",
+      },
+    ],
   },
 };
 
