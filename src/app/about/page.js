@@ -99,14 +99,16 @@ const AboutPage = () => {
                 { src: "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png", alt: "Express" },
                 { src: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg", alt: "React" },
                 { src: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg", alt: "NextJS" },
-                { src: "https://vitejs.dev/logo.svg", alt: "ViteJS" },
+                { src: "https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg", alt: "WordPress" },
+                { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Logo%20Plesk.svg", alt: "Plesk" },
+                { src: "https://commons.wikimedia.org/wiki/Special:FilePath/CPanel%20logo.svg", alt: "cPanel" },
+                { src: "https://www.supportpal.com/assets/img/logo_blue.svg?v=1768230109", alt: "Support Pal" },
+                { src: "https://www.whmcs.com/assets/images/logos/whmcs-co-brand-logo.svg", alt: "WHMCS" },
                 { src: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg", alt: "VueJS" },
-                { src: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg", alt: "Angular" },
-                { src: "https://raw.githubusercontent.com/saadeghi/files/main/daisyui/logo.svg", alt: "DaisyUI" },
                 { src: "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg", alt: "PostgreSQL" },
                 { src: "https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg", alt: "MongoDB" },
                 { src: "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg", alt: "GitHub" },
-                { src: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg", alt: "Figma" },
+
               ].map((speciality, index) => (
                 <div
                   key={index}
